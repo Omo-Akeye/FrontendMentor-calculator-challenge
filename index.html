@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+   
+  <main>
+
+     <!-- TOP -->
+    <div class="top">
+      <h3>calc</h3>
+      <span>
+        <h4>THEME</h4>
+        
+       <div>
+        <label>1</label><label>2</label><label>3</label>
+        <div class="tri-state-toggle">
+          <input class="toggle-button" type="radio" name="toggle" id="one" />
+          <input class="toggle-button" type="radio" name="toggle" id="two" />
+          <input class="toggle-button" type="radio" name="toggle" id="three" />
+        </div>
+      </div>
+      </span>
+    </div>
+
+
+
+    <!-- DISPLAY -->
+
+    <div>
+      <input type="text" class="display">
+    </div>
+
+
+     <!-- KEYBOARD -->
+    <div class="main" >
+      <section class="buttons">
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button data-value="DEL" class="del" id="special">DEL</button>
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button data-value="+" id="special">+</button>
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button data-value="-" id="special">-</button>
+      <button data-value="." id="special">.</button>
+      <button data-value="0">0</button>
+      <button data-value="/" id="special">/</button>
+      <button data-value="*" id="special">X</button>
+      </section>
+      <div class="special-buttons"><button data-value="RESET" class="special" id="special">RESET</button>
+        <button data-value="=" class="special1" id="special">=</button></div>
+    </div>
+  </main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Omo-Akeye">AKEYE</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

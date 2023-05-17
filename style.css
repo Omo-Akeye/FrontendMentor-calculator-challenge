@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+}
+ 
+:root {
+  --primary-color: hsl(222, 26%, 31%);
+  --keybackground-color: hsl(223, 31%, 20%);
+  --screen-color :  hsl(224, 36%, 15%);
+  --key-color :  hsl(225, 21%, 49%);
+  --key-shadow : hsl(224, 28%, 35%);
+  --keytoggle-background : hsl(6, 63%, 50%) ;
+  --key-shadow1 :  hsl(6, 70%, 34%);
+  --key-background1:hsl(30, 25%, 89%) ;
+  --key-shadow : hsl(28, 16%, 65%) ;
+  --text-color : hsl(221, 14%, 31%);
+  --text-white :  hsl(0, 0%, 100%);
+  --input-color :hsl(0, 0%, 100%) ;
+  --hover-button:  hsl(0, 0%, 100%) ;
+  --del-hover :  hsl(221, 14%, 31%) ;
+}
+
+.theme2 {
+  --primary-color:hsl(0, 0%, 90%) ; 
+  --keybackground-color:  hsl(0, 5%, 81%) ;
+  --screen-color :  hsl(0, 0%, 93%) ;
+  --key-color : hsl(185, 42%, 37%) ;
+  --key-shadow :  hsl(185, 58%, 25%) ;
+  --keytoggle-background : hsl(25, 98%, 40%) ;
+  --key-shadow1 : hsl(25, 99%, 27%) ;
+  --key-background1:hsl(45, 7%, 89%);
+  --key-shadow : hsl(35, 11%, 61%) ;
+  --text-color :hsl(60, 10%, 19%) ;
+  --text-white : hsl(0, 0%, 100%) ; 
+   --input-color : black ; 
+   --hover-button:  hsl(0, 0%, 100%) ;
+   --del-hover :   hsl(185, 58%, 25%) ;
+}
+.theme3 {
+
+  --primary-color: hsl(268, 75%, 9%) ; 
+  --keybackground-color: hsl(268, 71%, 12%)  ;
+  --screen-color : hsl(268, 71%, 12%)  ;
+  --key-color : hsl(281, 89%, 26%) ;
+  --key-shadow :  hsl(285, 91%, 52%);
+  --keytoggle-background : hsl(176, 100%, 44%) ;
+  --key-shadow1 : hsl(177, 92%, 70%) ;
+  --key-background1: hsl(268, 47%, 21%);
+  --key-shadow : hsl(290, 70%, 36%) ;
+  --text-color :hsl(52, 100%, 62%) ;
+  --text-white : hsl(0, 0%, 100%) ; 
+    --input-color : hsl(52, 100%, 62%);
+    --hover-button:  hsl(290, 70%, 36%)  ;
+    --del-hover :    hsl(285, 91%, 52%) ;
+    
+}
+
+body {
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-color: var(--primary-color);
+}
+
+
+    /* TOP */
+.top span {
+  display: flex;
+  align-items: flex-end;
+  
+}
+.top {
+  color: var(--input-color);
+}
+.top span h4{
+  margin-right:10px;
+}
+.top span p {
+  justify-content: space-between;
+}
+.top h3 {
+ font-size: 30px; 
+}
+.top input {
+  height: 20px;
+  width: 20px;
+  appearance: none;
+  background-color: black;
+  border-radius: 50%;
+  opacity: 0;
+}
+.top input:hover {
+  cursor: pointer;
+}
+.top .tri-state-toggle {
+  display: flex;
+  justify-content: center;
+  background-color: var(--keybackground-color);
+  border-radius: 50px;
+  padding: 2px;
+}
+.top #one {
+  opacity: 1;
+  background-color:  hsl(6, 63%, 50%);
+}
+.top{
+  display: flex;
+  justify-content: space-between;
+}
+label {
+  padding: 8px;
+}
+
+
+/*     DISPLAY */
+.display {
+  width: 500px;
+  height: 90px;
+  margin: 15px 0;
+  font-size: 40px;
+  text-align: right;
+  padding-right: 5px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: var(--screen-color);
+  color: var(--input-color);
+}
+
+
+
+  /* KEYBOARD */
+.main {
+  background-color: var(--keybackground-color);
+  padding: 35px;
+  border-radius: 10px;
+}
+button {
+  padding:10px;
+  font-size: 32px;
+  border: none;
+  border-radius: 9px;
+  border-bottom: 3px solid var(--key-shadow);
+  background-color: var(--key-background1);
+  color: var(--text-color);
+   box-shadow: var(--key-shadow);
+   cursor: pointer;
+
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+}
+.buttons button:hover {
+  background-color: var(--hover-button);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+}
+.del {
+  background-color: var(--key-color);
+  color: var(--text-white);
+}
+.buttons .del:hover {
+  background-color: var(--del-hover);
+}
+.special {
+  padding: 15px;
+  background-color: var(--key-color);
+  color: var(--text-white);
+}
+.special:hover {
+  background-color: var(--del-hover);
+}
+.special1{
+  padding: 15px;
+  background-color: var(--key-shadow1);
+  color: var(--text-white);
+}
+.special1:hover{
+  background-color: var(--keytoggle-background);
+}
+.special-buttons{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 10px;
+  margin-top: 15px;
+}
+
+
+
+@media (max-width :550px) {
+  .display {
+    width: 92%;
+    margin-left: 15px;
+  }
+  .buttons button {
+    font-size: 25px;
+  }
+  .main {
+    margin:0px 20px;
+    padding: 20px;
+  }
+  .special , .special1 {
+    font-size: 16px;
+  }
+  .top {
+    margin:0 20px;
+  }
+}
+
+
+
+
+
+.attribution { font-size: 17px; text-align: center; color: var(--input-color) }
+.attribution a { color: var(--input-color); text-decoration: none; }
